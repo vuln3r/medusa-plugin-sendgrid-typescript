@@ -410,6 +410,7 @@ export class SendGridService extends AbstractNotificationService {
         "subtotal",
         "total",
         "refundable_amount",
+        "metadata",
       ],
       relations: [
         "customer",
@@ -468,6 +469,7 @@ export class SendGridService extends AbstractNotificationService {
         "gift_card_total",
         "subtotal",
         "total",
+        "metadata",
       ],
       relations: [
         "customer",
@@ -583,6 +585,7 @@ export class SendGridService extends AbstractNotificationService {
         "gift_card_total",
         "subtotal",
         "total",
+        "metadata",
       ],
       relations: [
         "customer",
@@ -699,6 +702,7 @@ export class SendGridService extends AbstractNotificationService {
       date: order.created_at.toDateString(),
       items,
       discounts,
+      metadata: order.metadata,
       subtotal_ex_tax: `${this.humanPrice_(
         subtotal_ex_tax,
         currencyCode
