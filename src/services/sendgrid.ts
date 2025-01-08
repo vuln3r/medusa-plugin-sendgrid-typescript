@@ -585,7 +585,7 @@ export class SendGridService extends AbstractNotificationService {
         "gift_card_total",
         "subtotal",
         "total",
-        "metadata",
+        "metadata"
       ],
       relations: [
         "customer",
